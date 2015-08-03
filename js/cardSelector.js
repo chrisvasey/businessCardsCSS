@@ -9,13 +9,12 @@ $(document).ready(function(){
 	    $(".listItem").removeClass('active');
 	    $(readable).addClass('active');
 
-	    if(listId == null) {
-		    //If nothing selected show welcome card on stage
+	    //Checking a card has been selected
+	    if(listId == null) { //If nothing selected show welcome card on stage
 		    $(".card").attr({
 		    	id: "welcomeCard"
 		    })	
-	    } else {
-	    	//if something is selected show the selected card
+	    }else { //the selected card shows on stage
 		    $(".card").attr({
 		    	id: listId+"Card"
 		    });
